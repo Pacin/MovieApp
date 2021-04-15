@@ -1,0 +1,6 @@
+.container {
+  & > app-card {
+    display: flex;
+    flex-flow: wrap;
+  }
+}

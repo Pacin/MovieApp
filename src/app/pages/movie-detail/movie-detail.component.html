@@ -1,0 +1,21 @@
+    
+<div class="container">
+<div class="details-wrapper card">
+    <a class="btn btn-secondary" [routerLink]="'/'"><i class="bi bi-arrow-bar-left"></i> Go back</a>
+    <div class="card-body">
+    <img src="https://image.tmdb.org/t/p/w500/{{movieDetail.poster_path}}" alt="a movie poster">
+    <div class="card-content">
+    <h5>{{movieDetail.title}}</h5>
+    <p>Release date: {{movieDetail.release_date}}</p>
+    <a href="{{movieDetail.homepage}}" target="_blank" rel="noopener noreferrer">Movie's Homepage</a>
+    <p>{{movieDetail.overview}}</p>
+    <p><a href="https://www.imdb.com/title/{{movieDetail.imdb_id}}" target="_blank" rel="noopener noreferrer">imdb</a></p>
+    <div class="genres-wrapper">
+    <span>Genres ~ </span> <div class="genres" *ngFor="let genre of genres">
+        {{genre}}
+    </div>
+</div>
+    </div>
+</div>
+</div>
+</div>
